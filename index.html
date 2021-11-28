@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta  content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Pattern</title>
+</head>
+<body>
+    <h2>Triangle Pattern</h2>
+    <script>
+        var n = parseInt(prompt("Enter the number "));
+        var a =n;
+        for(var i =1;i<=n;i++){
+
+            for (var j=1;j<=n;j++){
+
+                if(j>=a){
+                  console.log("*");
+                }
+                else{
+                    console.log(" ");
+                }
+            }
+
+            for(var k =1;k<i;k++){
+
+                console.log("*");
+            }
+            a--;
+            console.log("\n");
+        }
+    </script>
+</body>
+</html>
